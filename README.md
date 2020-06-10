@@ -5,32 +5,32 @@
  三密状態を計測するサービスのサンプルです。
 
 * ソースファイルのチェックアウト
- git export https://github.com/deno78/mmsensor.git
+ git clone https://github.com/deno78/mmsensor.git
 
 * サーバ側作業
  herokuアカウントを作成します。
 
-pip freeze > requirements.txt
-git init
-git add .
-git commit -m "Initial Commit"
+ pip freeze > requirements.txt
+ git init
+ git add .
+ git commit -m "Initial Commit"
 
-heroku login
+ heroku login
 
-→ここでWebブラウザが起動してくるので、herokuにログインしてください。
+ →ここでWebブラウザが起動してくるので、herokuにログインしてください。
 
-heroku create 
+ heroku create 
 
-→割り当てられたURLが表示されるのでメモっておいてください。
+ →割り当てられたURLが表示されるのでメモっておいてください。
 
-git push heroku master
+ git push heroku master
 
 * プログラムを修正した場合は以下のコマンドで再度herokuにアップしてください。
-heroku login
-pip freeze > requirements.txt
-git add .
-git commit -m "initial commit2"
-git push heroku master
+ heroku login
+ pip freeze > requirements.txt
+ git add .
+ git commit -m "initial commit2"
+ git push heroku master
 
 
 * Raspberry Pi側作業
